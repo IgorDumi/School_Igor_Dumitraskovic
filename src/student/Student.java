@@ -23,15 +23,17 @@ public class Student {
         
     }
     
+    
+    //    STUDENT CONSTRUCTOR END
+    
+    
     public void info(){
         System.out.println("First Name: " + this.firstName);
-        System.out.println("Last Name: " + this.firstName);
+        System.out.println("Last Name: " + this.lastName);
         System.out.println("Year of Birth: " + this.yearOfBirth);
+        System.out.println("");
     }
 
-//    STUDENT CONSTRUCTOR END
-    
-    
 //    SET AND GET START
     
     public String getFirstName() {
