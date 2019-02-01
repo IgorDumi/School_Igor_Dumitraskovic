@@ -55,6 +55,6 @@ public class Course {
         this.numberOfClasses = numberOfClasses;
     }
    
- //    GET AND SET START
+ //    GET AND SET END
     
 }

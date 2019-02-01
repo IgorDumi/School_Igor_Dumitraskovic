@@ -1,12 +1,17 @@
 
 package student;
 
+import computer.Computer;
+import course.Course;
+
 
 public class Student {
     
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    private Course course;
+    private Computer computer;
     
 //    STUDENT CONSTRUCTORS START\
     
@@ -14,14 +19,18 @@ public class Student {
     this.firstName = "Petar";
     this.lastName = "Petrovic";
     this.yearOfBirth = 1950;
+    this.course = new Course();
+    this.computer = new Computer();
     
 }
     public Student( String firstName, String lastName, int yearOfBirth){
         this.firstName = firstName;
         this.lastName = lastName;
         this.yearOfBirth = yearOfBirth;
-        
+        this.course = new Course();
+        this.computer = new Computer();
     }
+    
     
     
     //    STUDENT CONSTRUCTOR END
@@ -31,6 +40,11 @@ public class Student {
         System.out.println("First Name: " + this.firstName);
         System.out.println("Last Name: " + this.lastName);
         System.out.println("Year of Birth: " + this.yearOfBirth);
+        System.out.println("Name: " + this.course.getName());
+        System.out.println("Code Name: " + this.course.getCodeName());
+        System.out.println("Number of Clases: " + this.course.getNumberOfClasses());
+//        this.course.info();
+        this.computer.info();
         System.out.println("");
     }
 
@@ -60,7 +74,16 @@ public class Student {
         this.yearOfBirth = yearOfBirth;
     }
     
-    //    SET AND GET END
+    public Course getCourse() {
+        return course;
+    }
     
+      public Computer getComputer() {
+        return computer;
+    }
+    //    SET AND GET END
+
+  
+
 
 }
