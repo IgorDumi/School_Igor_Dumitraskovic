@@ -4,12 +4,10 @@ import computer.Computer;
 import course.Course;
 import student.Student;
 
-        
 public class Main {
 
-
     public static void main(String[] args) {
-        
+
         Student defaultStudent = new Student();
         defaultStudent.info();
         
@@ -51,11 +49,6 @@ public class Main {
         
         Student maja = new Student("Maja", "Zmaj", 1980, qaCourse, pentium4);
         maja.info();
-        
-        
-        
-        
-        
     }
         
     }
